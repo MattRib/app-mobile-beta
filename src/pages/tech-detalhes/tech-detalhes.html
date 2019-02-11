@@ -19,7 +19,7 @@
   
   <ion-content>
   
-    <ion-card *ngFor="let t of tech" (click)="conteudo(n)">
+    <ion-card *ngFor="let t of tech" (click)="conteudo(t)">
       <img src="{{t.img}}"/>
       <ion-card-content>
         <p class="text-center">{{t.data}}</p>

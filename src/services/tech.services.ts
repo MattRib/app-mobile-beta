@@ -11,7 +11,7 @@ export class TechService{
 
         getTech() : Observable<Tech[]>{
             return this.http.get<Tech[]>(
-                `http://www.mocky.io/v2/5c5c84cc32000053002204e8`);
+                `http://www.mocky.io/v2/5c61e84b3000006200019557`);
 
         }
 } 

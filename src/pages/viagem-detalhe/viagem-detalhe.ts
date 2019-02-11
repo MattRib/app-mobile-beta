@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ViagemService } from '../../services/viagem.service';
 import { Noticia } from '../../model/noticias';
-import { TechService } from '../../services/tech.services';
 
 /**
- * Generated class for the TechDetalhesPage page.
+ * Generated class for the ViagemDetalhePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,21 +12,21 @@ import { TechService } from '../../services/tech.services';
 
 @IonicPage()
 @Component({
-  selector: 'page-tech-detalhes',
-  templateUrl: 'tech-detalhes.html',
+  selector: 'page-viagem-detalhe',
+  templateUrl: 'viagem-detalhe.html',
 })
-export class TechDetalhesPage {
+export class ViagemDetalhePage {
 
-  tech : Noticia[];
+  viagem: Noticia[];
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public techService: TechService) {
+              public viagemService: ViagemService) {
   }
 
   ionViewDidLoad() {
-    this.techService.getTech().subscribe(response => {
-      this.tech = response;
+    this.viagemService.getViagem().subscribe(response => {
+      this.viagem = response;
     });
   }
 
