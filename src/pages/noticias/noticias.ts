@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NoticiaService } from '../../services/noticias.service';
 import { Noticia } from '../../model/noticias';
+import { Tech } from '../../model/tech';
+
 
 /**
  * Generated class for the NoticiasPage page.

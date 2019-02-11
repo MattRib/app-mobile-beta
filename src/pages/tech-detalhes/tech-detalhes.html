@@ -1,0 +1,35 @@
+<head>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+  </head>
+  
+  <ion-header>
+  
+      <ion-navbar>
+          <ion-title class="text-center">Tecnologia</ion-title>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content>
+  
+    <ion-card *ngFor="let t of tech" (click)="conteudo(n)">
+      <img src="{{t.img}}"/>
+      <ion-card-content>
+        <p class="text-center">{{t.data}}</p>
+        <ion-card-title class="text-center">
+          {{t.titulo}}
+          </ion-card-title>
+        <ion-item class="lead" style="font-size:17px;">
+          {{t.conteudo}}
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  
+  </ion-content>

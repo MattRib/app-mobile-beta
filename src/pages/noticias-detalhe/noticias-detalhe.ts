@@ -29,7 +29,7 @@ export class NoticiasDetalhePage {
   }
 
   conteudo(n : Noticia){
-    this.navCtrl.push('NoticiasConteudoPage',{'noticia': n});
+    this.navCtrl.push('NoticiaConteudoPage',{'noticia': n});
   }
 
 }
